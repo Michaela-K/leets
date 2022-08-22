@@ -29,5 +29,29 @@
 // Incrementing by one gives 9 + 1 = 10.
 // Thus, the result should be [1,0].
 
+const plusOne = function(digits) {
+  // for(let i = 0; i < digits.length; i++){  //going forward
+  for(let i = digits.length -1; i >= 0; i--){  //going backward
+    if(digits[i] === 9){
+      digits[i] = 0;
+    }
+    else {
+      digits[i] ++; //++ goes backwards because of the loop
+      return digits;
+    }
+  }
+  return [1, ...digits]; //edge case [9,9]
+};
 
 
+console.log(plusOne([9,9]))
+// const plusOne = function(digits){
+//   let ans;
+//   ans = Number(digits.join("")) + 1;
+//   // console.log(ans)      //number
+//   // console.log(""+ans)   //string
+
+//   return (""+ans).split("").map((x) =>{
+//     return parseInt(x, 10); 
+//   })
+// };
