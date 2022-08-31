@@ -45,3 +45,15 @@ console.log(firstUniqChar("leetcode"))
 // If the index is greater than or equal to
 // the arrays length, -1 is returned, which means the array willnot be searched.
 // RETURN VALUE: the first index of th element in the array; -1 if not found
+
+
+
+//OTHER
+var firstUniqChar2 = function(s) {
+  for(let i of s){
+     if(s.lastIndexOf(i) == s.indexOf(i)){
+         return s.indexOf(i);
+     }
+ }
+ return -1;
+};
