@@ -16,8 +16,19 @@
 
 const firstUniqChar = function(s) {
   //loop over string
-  //take first element(make it a variable)
-  //compare first element with all the rest
+  for(let i=0;i<s.length;i++){
+    //take first element(make it a variable)
+    let el = s[i]
+    console.log("el",el)
+    console.log("i",i)
+    console.log("index of el",s.indexOf(el))  //index of letter
+    console.log("index of el +",s.indexOf(el, i+1)) 
+    //compare first element with all the rest
+    if(s.indexOf(el)==i && s.indexOf(el,i+1)==-1){
+
+    }
+
+  }
   //if no equal thats the answer
   //if equal, then take next index as element
 };
