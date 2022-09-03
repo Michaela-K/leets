@@ -15,5 +15,7 @@
 // Output: -1
 
 const firstUniqChar = function(s) {
-  
+
 };
+
+console.log(firstUniqChar("leetcode"))
