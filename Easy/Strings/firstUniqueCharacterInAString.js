@@ -15,5 +15,5 @@
 // Output: -1
 
 const firstUniqChar = function(s) {
-    
+  
 };
