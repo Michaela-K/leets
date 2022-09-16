@@ -14,19 +14,6 @@
 // Output: ["h","a","n","n","a","H"]
 
 
-var reverse = function(x) {
-  const absReversed = Math.abs(x).toString().split('').reverse().join('');
-  if (absReversed > 2**31) return 0;
-  return absReversed * Math.sign(x);
-};
-
-const reverse2 = function(s) {
-  let strtI = 0, endI = s.length- 1;
-  
-  while(strtI <= endI){
-      [s[strtI], s[endI]] = [s[endI], s[strtI]]
-      strtI++
-      endI--
-  }
-  return s
+var reverseString = function(s) {
+  return s.reverse();  
 };
