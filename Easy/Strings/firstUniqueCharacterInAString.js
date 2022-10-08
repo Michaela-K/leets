@@ -25,9 +25,9 @@ const firstUniqChar = function(s) {
     console.log("index of el +",s.indexOf(el, i+1)) 
     //compare first element with all the rest
     if(s.indexOf(el)==i && s.indexOf(el,i+1)==-1){
-      return i
+      return i  //return the index
     }
-    return -1
+    return -1 //doesnt exist
   }
   //if no equal thats the answer
   //if equal, then take next index as element
