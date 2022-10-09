@@ -34,3 +34,14 @@ const firstUniqChar = function(s) {
 };
 
 console.log(firstUniqChar("leetcode"))
+
+//NOTE;
+//indexOf(searchElement)
+// indexOf(searchElement, fromIndex)
+
+// fromIndex
+// The index to start the search at. 
+// If the provided index is 0 then the whole array will be searched
+// If the index is greater than or equal to
+// the arrays length, -1 is returned, which means the array willnot be searched.
+// RETURN VALUE: the first index of th element in the array; -1 if not found
