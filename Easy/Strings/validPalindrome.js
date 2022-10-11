@@ -22,3 +22,8 @@
 // Explanation: s is an empty string "" after removing non-alphanumeric characters.
 // Since an empty string reads the same forward and backward, it is a palindrome.
 
+const isPalindrome = function (s) {
+  let original =s.toLowerCase().replace(/[^a-z0-9]/gi,'') //no spaces, commas, colons
+  let stringReverse = s.replace(/[^a-z0-9]/gi,'').split("").reverse().join("").toLowerCase();
+  return original === stringReverse;
+};
