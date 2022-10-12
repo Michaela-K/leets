@@ -27,3 +27,9 @@ const isPalindrome = function (s) {
   let stringReverse = s.replace(/[^a-z0-9]/gi,'').split("").reverse().join("").toLowerCase();
   return original === stringReverse;
 };
+
+
+var isPalindrome2 = function(s) {
+  let string = s.replace(/\W|_/g, '').toLowerCase()
+  return string === string.split("").reverse().join("");
+};
